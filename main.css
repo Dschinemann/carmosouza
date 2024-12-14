@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Framer Sans';
+    src: url('FramerSans700.ttf') format('truetype');
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #496775;
+    font-family: 'Framer Sans', sans-serif;
+    font-size: 16px;
+}
+
+.icone-header {
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    background-color: #020a0e69;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    max-height: 100vh;
+}
+
+.solucoes-grid {
+    display: grid;
+    grid-template-areas:
+        "A B"
+        "C B";
+    background-color: #020a0eb0;
+    border-radius: 10px;
+}
+
+.servicos-grid {
+    grid-area: B;
+    min-width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servico-descricao {
+    grid-area: C;
+    display: flex;
+    justify-content: center;
+    /* Alinha horizontalmente ao centro */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+}
+
+.item-empresa {
+    background-color: #020a0eb0;
+    color: white;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servico-titulo {
+    align-self: start;
+    width: 50%;
+    margin: 2.5rem;
+}
+
+.servico-titulo h1 {
+    font-size: 6rem;
+}
+
+#solucoes {
+    min-height: 100vh;
+    background-color: #496775;
+    color: white;
+    padding: 25px;
+    background-image: url("Images/image06.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#myTabContent{
+    padding: 25px;
+}
+#sobre-nos {
+    min-height: 100vh;
+    background-color: #4f7c92;
+}
+
+footer {
+    padding: 10px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    margin: 0;
+}
+
+#solucoes,
+#sobre-nos {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#sobre-nos div {
+    padding: 25px;
+}
+
+#sobre-nos div p {
+    text-align: justify;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+    
+}
